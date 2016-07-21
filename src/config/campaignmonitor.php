@@ -2,8 +2,8 @@
 
 return [
 
-    'api_key' => null,
+    'api_key' => env('CAMPAIGN_MONITOR_API_KEY', null),
 
-    'client_id' => null,
+    'client_id' => env('CAMPAIGNMONITOR_CLIENT_ID', null),
 
 ];
