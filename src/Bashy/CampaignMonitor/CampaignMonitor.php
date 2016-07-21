@@ -1,6 +1,6 @@
 <?php
 
-namespace Casinelli\CampaignMonitor;
+namespace Bashy\CampaignMonitor;
 
 class CampaignMonitor
 {
@@ -20,7 +20,7 @@ class CampaignMonitor
     {
         return new \CS_REST_Clients($clientId, $this->getAuthTokens());
     }
-    
+
     public function people($clientId = null)
     {
         return new \CS_REST_People($clientId, $this->getAuthTokens());

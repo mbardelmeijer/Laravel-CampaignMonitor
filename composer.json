@@ -1,5 +1,5 @@
 {
-    "name": "casinelli/laravel-campaignmonitor",
+    "name": "bashy/laravel-campaignmonitor",
     "description": "A Laravel 5 wrapper for Campaign Monitor",
     "keywords": ["laravel", "laravel5", "campaign monitor", "wrapper", "newsletter"],
 	"license": "MIT License",
@@ -16,12 +16,7 @@
     },
     "autoload": {
         "psr-0": {
-            "Casinelli\\CampaignMonitor": "src/"
-        }
-    },
-    "extra": {
-        "branch-alias": {
-            "dev-master": "0.1.x-dev"
+            "Bashy\\CampaignMonitor": "src/"
         }
     },
     "minimum-stability": "dev"

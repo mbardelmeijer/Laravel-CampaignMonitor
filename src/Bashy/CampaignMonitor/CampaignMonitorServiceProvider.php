@@ -1,6 +1,6 @@
 <?php
 
-namespace Casinelli\CampaignMonitor;
+namespace Bashy\CampaignMonitor;
 
 use Illuminate\Support\ServiceProvider;
 

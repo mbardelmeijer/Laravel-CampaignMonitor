@@ -1,6 +1,6 @@
 <?php
 
-namespace Casinelli\CampaignMonitor\Facades;
+namespace Bashy\CampaignMonitor\Facades;
 
 use Illuminate\Support\Facades\Facade;
 
