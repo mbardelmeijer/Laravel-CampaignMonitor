@@ -3,13 +3,13 @@ A Laravel 5 wrapper for CampaignMonitor APIs
 
 ## Installation
 
-- [Laravel-CampaignMonitor on Packagist](https://packagist.org/packages/casinelli/laravel-campaignmonitor)
-- [Laravel-CampaignMonitor on GitHub](https://github.com/Casinelli/Laravel-CampaignMonitor)
+- [Laravel-CampaignMonitor on Packagist](https://packagist.org/packages/bashy/laravel-campaignmonitor)
+- [Laravel-CampaignMonitor on GitHub](https://github.com/bbashy/Laravel-CampaignMonitor)
 
 To get the latest version of Laravel-CampaignMonitor simply require it in your `composer.json` file.
 
 ~~~
-"casinelli/laravel-campaignmonitor": "dev-master"
+"bashy/laravel-campaignmonitor": "~1.0"
 ~~~
 
 You'll then need to run `composer install` to download it and have the autoloader updated.
@@ -21,7 +21,7 @@ Once Laravel-CampaignMonitor is installed you need to register the service provi
 
 'providers' => [
 
-    Casinelli\CampaignMonitor\CampaignMonitorServiceProvider::class,
+    Bashy\CampaignMonitor\CampaignMonitorServiceProvider::class,
 
 ]
 ~~~
@@ -33,7 +33,7 @@ Laravel-CampaignMonitor also ships with a facade. You can register the facade in
 
 'aliases' => [
 
-    'CampaignMonitor' => Casinelli\CampaignMonitor\Facades\CampaignMonitor::class,
+    'CampaignMonitor' => Bashy\CampaignMonitor\Facades\CampaignMonitor::class,
 
 ]
 ~~~
@@ -70,7 +70,7 @@ Some examples:
 // Add an user to a List ID:
 $result = CampaignMonitor::subscribers('LIST_ID')->add([
     'EmailAddress' => 'example@gmail.com',
-    'Name' => 'Giovanni Casinelli',
+    'Name' => 'Ben',
 ]);
 
 // Create a list for a Client:
