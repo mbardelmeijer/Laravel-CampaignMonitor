@@ -6,9 +6,10 @@ class CampaignMonitor
 {
     protected $app;
 
-    public function __construct($app)
+    public function __construct($app, $api_key = null)
     {
         $this->app = $app;
+        $this->api_key = $api_key;
     }
 
     public function campaigns($campaignId = null)
@@ -51,13 +52,19 @@ class CampaignMonitor
         return new \CS_REST_Transactional_ClassicEmail($this->getAuthTokens(), $clientId);
     }
 
-    public function smartSend($smartId = null, $clientId)
+    public function smartSend($smartId = null, $clientId = null)
     {
         return new \CS_REST_Transactional_SmartEmail($smartId, $this->getAuthTokens(), $clientId);
     }
 
     protected function getAuthTokens()
     {
+        if ($this->api_key != null){
+            return [
+                'api_key' => $this->api_key
+            ];
+        }
+
         return [
             'api_key' => $this->app['config']['campaignmonitor.api_key'],
         ];
