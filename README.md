@@ -6,13 +6,11 @@ A Laravel 5 wrapper for CampaignMonitor APIs
 - [Laravel-CampaignMonitor on Packagist](https://packagist.org/packages/bashy/laravel-campaignmonitor)
 - [Laravel-CampaignMonitor on GitHub](https://github.com/bbashy/Laravel-CampaignMonitor)
 
-To get the latest version of Laravel-CampaignMonitor simply require it in your `composer.json` file.
+To get the latest version of Laravel-CampaignMonitor simply run this command
 
 ~~~
-"bashy/laravel-campaignmonitor": "~1.0"
+composer require "bashy/laravel-campaignmonitor"
 ~~~
-
-You'll then need to run `composer install` to download it and have the autoloader updated.
 
 Once Laravel-CampaignMonitor is installed you need to register the service provider with the application. Open up `app/config/app.php` and find the `providers` key.
 
