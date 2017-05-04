@@ -15,8 +15,6 @@ composer require "bashy/laravel-campaignmonitor"
 Once Laravel-CampaignMonitor is installed you need to register the service provider with the application. Open up `app/config/app.php` and find the `providers` key.
 
 ~~~php
-<?php
-
 'providers' => [
 
     Bashy\CampaignMonitor\CampaignMonitorServiceProvider::class,
@@ -27,8 +25,6 @@ Once Laravel-CampaignMonitor is installed you need to register the service provi
 Laravel-CampaignMonitor also ships with a facade. You can register the facade in the `aliases` key of your `app/config/app.php` file.
 
 ~~~php
-<?php
-
 'aliases' => [
 
     'CampaignMonitor' => Bashy\CampaignMonitor\Facades\CampaignMonitor::class,
@@ -39,14 +35,12 @@ Laravel-CampaignMonitor also ships with a facade. You can register the facade in
 Create the configuration file using artisan
 
 ~~~
-$ php artisan vendor:publish --provider="Casinelli\CampaignMonitor\CampaignMonitorServiceProvider"
+$ php artisan vendor:publish --provider="Bashy\CampaignMonitor\CampaignMonitorServiceProvider"
 ~~~
 
 And set your own API key and Client ID:
 
 ~~~php
-<?php
-
 return [
 
     'api_key' => env('CAMPAIGNMONITOR_API_KEY'),
@@ -63,8 +57,6 @@ You can find all the methods in the original [campaignmonitor/createsend-php pac
 Some examples:
 
 ~~~php
-<?php
-
 // Add an user to a List ID:
 $result = CampaignMonitor::subscribers('LIST_ID')->add([
     'EmailAddress' => 'example@gmail.com',
@@ -80,8 +72,6 @@ $result = CampaignMonitor::lists()->create(\Config::get('campaignmonitor.client_
 To send classic transactional emails:
 
 ~~~php
-<?php
-
 $data = [
     'From' => 'from@example.org',
     'To' => 'to@example.org',
