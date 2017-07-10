@@ -1,10 +1,11 @@
 # Laravel-CampaignMonitor
 A Laravel 5 wrapper for CampaignMonitor APIs
 
-## Installation
-
 - [Laravel-CampaignMonitor on Packagist](https://packagist.org/packages/bashy/laravel-campaignmonitor)
 - [Laravel-CampaignMonitor on GitHub](https://github.com/bbashy/Laravel-CampaignMonitor)
+
+
+## Installation
 
 Pull in the package through Composer;
 ```
