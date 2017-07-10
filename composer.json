@@ -19,5 +19,15 @@
             "Bashy\\CampaignMonitor": "src/"
         }
     },
-    "minimum-stability": "dev"
+    "minimum-stability": "dev",
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Bashy\\CampaignMonitor\\CampaignMonitorServiceProvider"
+            ],
+            "aliases": {
+                "CampaignMonitor": "Bashy\\CampaignMonitor\\Facades\\CampaignMonitor"
+            }
+        }
+    }
 }
